@@ -341,3 +341,57 @@ footer {
     padding: 20px;
   }
 }
+.home .magazine {
+  border-top: 1px solid #dee2e6;
+  margin: 20px 0;
+  padding: 10px 20px;
+}
+.home .magazine h3 {
+  padding: 20px 0px 0px;
+}
+.home .magazine p {
+  padding: 10px 0px 15px;
+}
+.home .magazine .form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.home .magazine .form input {
+  width: 300px;
+  padding: 10px 20px;
+}
+@media (max-width: 500px) {
+  .home .magazine .form input {
+    width: 450px;
+    padding: 20px 0;
+  }
+}
+.home .magazine .form button {
+  background: #22283A;
+  color: #F6F7F8;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 8px 15px;
+}
+.home .magazine .form button:hover {
+  background: #F6F7F8;
+  color: #22283A;
+}
+@media (max-width: 500px) {
+  .home .magazine .form button {
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+@media (max-width: 500px) {
+  .home .magazine .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

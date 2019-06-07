@@ -136,4 +136,54 @@
       padding: 20px;
     }
   }
+
+  .magazine {
+    border-top: 1px solid @main-border-color;
+    margin:20px 0;
+    padding: 10px 20px;
+
+
+    h3 {
+      padding: 20px 0px 0px;
+    }
+
+    p {
+      padding: 10px 0px 15px;
+    }
+
+    .form{
+      .custom-layout(flex-start, center);
+
+      input {
+        width: 300px;
+        padding: 10px 20px;
+
+        @media @phone {
+          width: 450px;
+          padding: 20px 0;
+        }
+      }
+      button {
+        .signUp-button(5px, 1.8rem, center);
+          padding: 8px 15px;
+
+          &:hover {
+            .hover();
+          }
+
+          @media @phone {
+            .full-width();
+            padding: 20px 0;
+          }
+      }
+
+      @media @phone {
+        .custom-layout(center, center);
+        .flex-direction(column);
+        .full-width();
+        margin: 0 auto;
+      }
+    }
+    
+  }
 }// home
