@@ -33,14 +33,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+    With adaptive websites, several different layouts need to be created for different sets of fixed sreen sizes. Becuase of this, not all screen sizes and screen resolutions will be covered. With Responsive web design, there is only one master layout that will be loaded across all devices of varying screen sizes and resolutions. This also allows for faster load speeds do to the fact that there is only one layout to load to the browser.
 
 2. Describe what it means to be mobile first vs desktop first.
+    Mobile first design means that you start to build the site with mobile screens in mind first and then work toward desktop sizes. Media queries usually start in min-width's. Desktop first is the exact opposite and and have media queries that use max-width.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    It allows us to use the precentage as a base value and convert the rem units by a power of 10. In other words, our default font size is usually 10px, but with this base value you can calculate and set the body of the website to 16px by doing the following: (62.5/100)*16 = 10px. So in rem form 16px = 1.6 rem.
 
 4. How would you describe preprocessing to someone new to CSS?
+    Preprocessing allows you to write CSS with more features, like using variables, the nesting of selectors in a hiearchal form, and mixins; which increases readability and accessability of langauge extension like LESS. Then the preprocessor compiles all the code into a single CSS file in normal CSS syntax that the browser will read to style the  website.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+    My favorite concept in preprocessing is Nesting!! This concept has increased my ability to filter through my code faster immensly. The only thing that has given me trouble is watching my syntax errors and nesting to far.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
