@@ -16,6 +16,7 @@
     p {
       padding:0 15px;
     }
+
   
   }
 
@@ -29,6 +30,27 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        .full-width();
+        height: 375px;
+        margin: 20px auto;
+      }
+
+      @media @phone {
+        max-width:450px; 
+        
+      }
+    }
+
+    @media @phone {
+      .flex-direction(column);
+    }
+  }
+
+  @media @phone {
+    .sky, .launch {
+      display: none;
     }
   }
 

@@ -2,8 +2,8 @@
   background: #F6F7F8;
   color: #22283A;
 }
-.transition {
-  transition: all 5s ease-in-out;
+.full-width {
+  width: 100%;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -227,6 +227,29 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+    height: 375px;
+    margin: 20px auto;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    max-width: 450px;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .home .sky,
+  .home .launch {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
