@@ -1,1 +1,36 @@
 // Navigation code here
+// .custom-layout(@justify, @align){
+//     display: flex;
+//     justify-content: @justify;
+//     align-items: @align;
+// }
+
+nav {
+    background: @nav-bg;
+    max-width: 1000px;
+    width:100%;
+    margin: 0px auto;
+    padding: 5px 0;
+
+    div {
+        .custom-layout(center, center);
+        .flex-direction(column);
+        margin-top: 5px;
+
+        h1 {
+            font-size: 4rem;
+        }
+        .nav-list {
+            .custom-layout(space-around, center);
+            .flex-direction(row);
+            margin-top: 20px;
+
+            li a{
+                color: @nav-font;
+                font-size: 1.6rem;
+                padding: 0 16px;
+                text-decoration: none;
+            }
+        }
+    }
+}
