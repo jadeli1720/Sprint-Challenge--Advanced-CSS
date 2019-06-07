@@ -1,3 +1,10 @@
+.hover {
+  background: #F6F7F8;
+  color: #22283A;
+}
+.transition {
+  transition: all 5s ease-in-out;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -254,6 +261,10 @@ footer {
   text-align: center;
   padding: 8px 15px;
   width: 30%;
+}
+.home .walk .walk-text .btn:hover {
+  background: #F6F7F8;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
