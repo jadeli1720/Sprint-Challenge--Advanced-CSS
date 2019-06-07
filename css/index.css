@@ -169,10 +169,16 @@ p {
 }
 nav {
   background: #F6F6F6;
-  max-width: 1000px;
-  width: 100%;
-  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
   padding: 5px 0;
+  position: fixed;
+  top: 0%;
+  height: 100px;
+  width: 100vw;
+  z-index: 1;
 }
 nav div {
   display: flex;
@@ -206,6 +212,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 100px;
 }
 .home .intro h2 {
   padding: 15px;
