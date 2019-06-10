@@ -1,6 +1,7 @@
 // Home Content
 
 .home {
+  margin-top: 100px;
 
   .intro {
 
@@ -8,9 +9,15 @@
       padding: 15px;
     }
 
+    img{
+      border-radius: 5px;
+      width: 100%;
+    }
+    
     p {
       padding:0 15px;
     }
+
   
   }
 
@@ -24,6 +31,27 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        .full-width();
+        height: 375px;
+        margin: 20px auto;
+      }
+
+      @media @phone {
+        max-width:450px; 
+        
+      }
+    }
+
+    @media @phone {
+      .flex-direction(column);
+    }
+  }
+
+  @media @phone {
+    .sky, .launch {
+      display: none;
     }
   }
 
@@ -37,10 +65,14 @@
     p {
       margin-top: 13px;
     }
+
+    @media @phone {
+      margin-bottom: 20px;
+    }
   }
 
   .walk {
-    margin-top: 60px;
+    margin-top:60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
@@ -51,6 +83,10 @@
 
       h3 {
         margin-bottom: 10px;
+
+        @media @phone{
+          margin-top: 20px;
+        }
       }
 
       p {
@@ -58,8 +94,25 @@
       }
 
       .btn {
+          .signUp-button(5px, 1.8rem, center);
+          padding: 8px 15px;
+          width:30%;
+
+          &:hover {
+            .hover();
+          }
+
+          @media @phone {
+            .full-width();
+            padding: 30px 0;
+          }
+        }
+
+        @media @phone {
+          .full-width();
+        }
+
       }
-    }
 
     .walk-img {
       width: 46%;
@@ -70,6 +123,67 @@
         height: auto;
         border-radius: 10px;
       }
+
+      @media @phone {
+        .full-width();
+        margin: 0 auto;
+      }
     }
+
+    @media @phone{
+      .flex-direction(column-reverse);
+      margin: 0 auto;
+      padding: 20px;
+    }
+  }
+
+  .magazine {
+    border-top: 1px solid @main-border-color;
+    margin:20px 0;
+    padding: 10px 20px;
+
+
+    h3 {
+      padding: 30px 0px 0px;
+    }
+
+    p {
+      padding: 10px 0px 15px;
+    }
+
+    .form{
+      .custom-layout(flex-start, center);
+
+      input {
+        width: 300px;
+        padding: 10px 20px;
+
+        @media @phone {
+          width: 450px;
+          padding: 20px 0;
+        }
+      }
+      button {
+        .signUp-button(5px, 1.8rem, center);
+          padding: 8px 15px;
+
+          &:hover {
+            .hover();
+          }
+
+          @media @phone {
+            .full-width();
+            padding: 20px 0;
+          }
+      }
+
+      @media @phone {
+        .custom-layout(center, center);
+        .flex-direction(column);
+        .full-width();
+        margin: 0 auto;
+      }
+    }
+    
   }
 }// home

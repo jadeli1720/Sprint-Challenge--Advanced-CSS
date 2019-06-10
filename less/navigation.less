@@ -1,1 +1,41 @@
 // Navigation code here
+// .custom-layout(@justify, @align){
+//     display: flex;
+//     justify-content: @justify;
+//     align-items: @align;
+// }
+
+nav {
+    background: @nav-bg;
+    .custom-layout(center, center);
+    margin: auto;
+    padding: 5px 0;
+    position: fixed;
+	top: 0%;
+	height: 100px;
+	width: 100vw;
+	z-index: 1;
+
+    div {
+        .custom-layout(center, center);
+        .flex-direction(column);
+        margin-top: 5px;
+        
+
+        h1 {
+            font-size: 4rem;
+        }
+        .nav-list {
+            .custom-layout(space-around, center);
+            .flex-direction(row);
+            margin: 20px 0 8px;
+
+            li a{
+                color: @nav-font;
+                font-size: 1.6rem;
+                padding: 0 16px;
+                text-decoration: none;
+            }
+        }
+    }
+}
